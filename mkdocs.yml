@@ -2,7 +2,7 @@
 site_name: XiangShan 官方文档
 theme:
     name: material
-    custom_dir: docs/.overrides
+    # custom_dir: docs/.overrides
     language: zh
     features:
         - navigation.tabs
