@@ -1,6 +1,8 @@
-# Welcome to XiangShan document
+# XiangShan Open Source Processor
 
+<figure markdown>
 ![香山 Logo](figs/LOGO.png)
+</figure>
 
 ## Recent Updates
 
