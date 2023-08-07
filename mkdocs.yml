@@ -6,10 +6,12 @@ theme:
     language: zh
     features:
         - navigation.tabs
+        - content.action.view
 
 repo_url: https://github.com/OpenXiangShan/XiangShan
-edit_url: https://github.com/OpenXiangShan/XiangShan-doc/edit/main/docs/
 repo_name: OpenXiangShan/XiangShan
+edit_uri: https://github.com/OpenXiangShan/XiangShan-doc/edit/main/docs/
+
 markdown_extensions:
   - admonition
   - pymdownx.details
