@@ -2,6 +2,7 @@
 site_name: XiangShan 官方文档
 theme:
     name: material
+    language: zh
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -13,6 +14,16 @@ markdown_extensions:
   - md_in_html
   - def_list
 plugins:
+    - search:
+        lang:
+            - zh
+            - en
+    - i18n:
+        languages:
+            zh: "中文"
+            en: "English"
+        default_language: 'zh'
+        material_alternate: true
     # - with-pdf:
     #     author: XiangShan Team
     #     copyright: XiangShan Team, 2022
@@ -115,6 +126,6 @@ nav:
             - 编译 Linux Kernel: tools/linux-kernel-for-xs.md
             - 制作 Debian 镜像: tools/debian.md
             # - 常用脚本: tools/scripts.md
-        - Troubleshooting: tools/troubleshoot-zh.md
+        - Troubleshooting: tools/troubleshoot.md
     - 编译工具链:
         - riscv-gnu-toolchain: compiler/gnu_toolchain.md

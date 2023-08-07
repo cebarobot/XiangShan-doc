@@ -1,8 +1,6 @@
 Troubleshooting 指南
 ================
 
-This chapter has [English version](./troubleshoot.md).
-
 * 编译和仿真香山代码需要耗费大量内存，请确保设备具有足够的内存。对于 MinimalConfig 选项，我们推荐内存至少为 32GB；对于完整的香山核，推荐内存至少为 64GB。（参见：[https://github.com/OpenXiangShan/XiangShan/issues/995](https://github.com/OpenXiangShan/XiangShan/issues/995)）
     * 改变 swap 区的大小可能有所帮助。（参见：[https://github.com/OpenXiangShan/XiangShan/issues/852](https://github.com/OpenXiangShan/XiangShan/issues/852)）
 * 香山需要 Java 11 或更高的版本，请确认 Java 的版本。我们已经了解到香山在 Java 8 环境下无法正常工作。

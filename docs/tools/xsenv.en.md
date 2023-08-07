@@ -120,11 +120,11 @@ The generated `coremark-riscv64-xs.bin` can be used as program input in simulati
 
 #### Generate custom workload with AM
 
-To generate custom workloads using AM, see [generate custom workload with AM](./gen-workload-with-am-en.md)
+To generate custom workloads using AM, see [generate custom workload with AM](./gen-workload-with-am.en.md)
 
 ### Generate Linux Kernel as workload
 
-To run Linux Kernel on XiangShan, we need to use BBL. See [building the Linux Kernel](./linux-kernel-for-xs-en.md).
+To run Linux Kernel on XiangShan, we need to use BBL. See [building the Linux Kernel](./linux-kernel-for-xs.en.md).
 
 The environment we provide does not include the src code for compiling Linux Kernel, users need to download it by themselves.
 
@@ -244,7 +244,7 @@ Then run:
 
 By default, simv uses `XiangShan/ram.bin` as input.
 
-see [vcs](./vcs-en.md) for more details.
+see [vcs](./vcs.en.md) for more details.
 ### Viewing and analyzing performance counters
 
 When the workload execution ends, the performance counter results will be printed. If you redirect the content of performance counters to a file, you can use visualization tools to see structured performance counter information.

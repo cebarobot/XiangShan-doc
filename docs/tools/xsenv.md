@@ -3,9 +3,7 @@ XiangShan 前端开发环境
 
 在这一章中，我们将介绍如何编译和仿真香山代码、如何生成可运行的 Workload，并介绍一些开发中用到的辅助工具。
 
-如果遇到问题，可以参考 [Troubleshooting](./troubleshoot-zh.md) 以及 [https://github.com/OpenXiangShan/XiangShan/issues](https://github.com/OpenXiangShan/XiangShan/issues) 中的问题及解答。
-
-This chapter has [English version](./xsenv-en.md).
+如果遇到问题，可以参考 [Troubleshooting](./troubleshoot.md) 以及 [https://github.com/OpenXiangShan/XiangShan/issues](https://github.com/OpenXiangShan/XiangShan/issues) 中的问题及解答。
 
 ## TLDR
 

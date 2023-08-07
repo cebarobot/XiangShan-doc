@@ -1,5 +1,4 @@
 # Linux Kernel for XiangShan in EMU
-This chapter has [English version](./linux-kernel-for-xs-en.md)
 
 #### 1. 在仿真环境下如何构建一个可在香山或者 NEMU 上运行的最简 Linux Kernel
 
