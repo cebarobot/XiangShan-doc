@@ -1,4 +1,4 @@
-mkdocs==1.2.3
+mkdocs==1.5.1
 packaging>=20.5
 watchdog>=2.0
 importlib-metadata>=3.10
@@ -16,3 +16,4 @@ MarkupSafe>=2.0
 six>=1.5
 mkdocs-material
 mkdocs-static-i18n
+mkdocs-git-revision-date-localized-plugin

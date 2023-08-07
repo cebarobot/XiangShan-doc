@@ -8,6 +8,7 @@ theme:
         - navigation.tabs
 
 repo_url: https://github.com/OpenXiangShan/XiangShan
+edit_url: https://github.com/OpenXiangShan/XiangShan-doc/edit/main/docs/
 repo_name: OpenXiangShan/XiangShan
 markdown_extensions:
   - admonition
@@ -38,6 +39,8 @@ plugins:
                 Tutorials: '上手教程'
                 Processor Core: '处理器核'
                 Development Framework: '敏捷开发框架'
+    - git-revision-date-localized:
+        enable_creation_date: true
     # - with-pdf:
     #     author: XiangShan Team
     #     copyright: XiangShan Team, 2022
