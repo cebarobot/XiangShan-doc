@@ -6,7 +6,7 @@ theme:
     language: zh
     features:
         - navigation.tabs
-        - content.action.view
+        - content.action.edit
 
 repo_url: https://github.com/OpenXiangShan/XiangShan
 repo_name: OpenXiangShan/XiangShan
