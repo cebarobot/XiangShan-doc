@@ -37,6 +37,8 @@ plugins:
         nav_translations:
             zh:
                 Introduction: '简介'
+                About XiangShan: '香山项目总体介绍'
+                Guide: '香山项目导引'
                 Integration Guide: '集成指南'
                 Tutorials: '上手教程'
                 Processor Core: '处理器核'
@@ -58,8 +60,8 @@ plugins:
 nav:
     - Introduction:
         # - 写前必读: index.md
-        - 香山项目总体介绍: index.md
-        - 香山项目导引: guide.md
+        - About XiangShan: index.md
+        - Guide: guide.md
     - Integration Guide:
         - NANHU Core: integration/overview.md
         - SoC Integration: integration/soc.md
@@ -144,6 +146,7 @@ nav:
             - Constantin: tools/constantin.md
             - OracleBP: tools/oraclebp.md
             - NEMU: tools/nemu.md
+            - 使用 AM 生成自定义 workload: tools/gen-workload-with-am.md
             - 编译 Linux Kernel: tools/linux-kernel-for-xs.md
             - 制作 Debian 镜像: tools/debian.md
             # - 常用脚本: tools/scripts.md

@@ -79,7 +79,7 @@ store 到 load 的前递操作被分配到三级流水执行. 在前递操作期
 
 **虚地址前递的数据通路:** [load 流水线](../memory/fu/load_pipeline.md)的 stage 0 会根据指令的 sqIdx，生成数据前递所使用的 mask. 在 load 流水线的 stage 1，虚拟地址和 mask 被发送到 [store queue](../memory/lsq/store_queue.md#store-to-load-forward-query) 和 [committed store buffer](../memory/lsq/committed_store_buffer.md#store-to-load-forward-query) 进行前递查询. 在 load 流水线的 stage 2，store queue 和 committed store buffer 产生前递查询结果，这些结果会和 dcache 读出的结果合并. 
 
-**虚地址前递的控制通路:** 在 load 流水线的 stage 0, 指令的虚拟地址被送入 TLB 开始进行虚实地址转换. 在 load 流水线的 stage 1, TLB 反馈回指令的物理地址. 物理地址和 mask 被发送到 [store queue](../memory/lsq/store_queue.md#store-to-load-forward-query) 和 [committed store buffer](../memory/lsq/committed_store_buffer.md#store-to-load-forward-query) 进行前递查询(只做地址匹配). 在 load stage 2, 虚地址的匹配结果和实地址的匹配结果将被比较, 一旦两者不同, 则说明虚地址前递发生了错误. [检查发现错误后，触发回滚并刷新 committed store buffer](../fu/load_pipeline.md#forward-failure). 这样的操作会将引发错误的虚地址从 store queue 和 committed store buffer 中排除出去.
+**虚地址前递的控制通路:** 在 load 流水线的 stage 0, 指令的虚拟地址被送入 TLB 开始进行虚实地址转换. 在 load 流水线的 stage 1, TLB 反馈回指令的物理地址. 物理地址和 mask 被发送到 [store queue](../memory/lsq/store_queue.md#store-to-load-forward-query) 和 [committed store buffer](../memory/lsq/committed_store_buffer.md#store-to-load-forward-query) 进行前递查询(只做地址匹配). 在 load stage 2, 虚地址的匹配结果和实地址的匹配结果将被比较, 一旦两者不同, 则说明虚地址前递发生了错误. [检查发现错误后，触发回滚并刷新 committed store buffer](./fu/load_pipeline.md#forward-failure). 这样的操作会将引发错误的虚地址从 store queue 和 committed store buffer 中排除出去.
 
 !!! info
     作为对比，雁栖湖架构实地址前递的流程如下： load 流水线的 stage 0 会根据指令的 sqIdx，生成数据前递所使用的 mask. 在 load 流水线的 stage 1，TLB 反馈回物理地址，此物理地址和 mask 被发送到 store queue 和 committed store buffer 进行前递查询. 在 load 流水线的 stage 2，store queue 和 committed store buffer 产生前递查询结果，这些结果会和 dcache 读出的结果合并. 控制和数据通路均遵循这一流程. 

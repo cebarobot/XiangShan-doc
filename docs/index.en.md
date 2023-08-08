@@ -1,7 +1,7 @@
 # XiangShan Open Source Processor
 
 <figure markdown>
-![香山 Logo](figs/LOGO.png)
+![XiangShan Logo](figs/LOGO.png)
 </figure>
 
 ## Recent Updates
