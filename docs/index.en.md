@@ -1,40 +1,72 @@
-# XiangShan Open Source Processor
+---
+template: home.html
+hide:
+  - navigation
+  - toc
+---
 
 <figure markdown>
-![XiangShan Logo](figs/LOGO.png)
+<!-- <object data="figs/hero.svg" width="600"> </object> -->
+![Xiangshan: Open-Source High-Performance RISC-V Processor](figs/hero.svg){ width="600" }
 </figure>
 
-## Recent Updates
 
-**Look forward to seeing you at MICRO'23 at Toronto, Canada. Learn more on [the MICRO'23 Tutorial Page](https://xiangshan-doc.readthedocs.io/zh_CN/latest/tutorials/micro23/).**
+<div style="text-align: center;" markdown>
+[Get Started](#){ .md-button .md-button--primary }
+[Learn More](#){ .md-button }
+</div>
 
-We have hosted tutorials at ASPLOS'23. Learn more on [the ASPLOS'23 Tutorial Page](https://xiangshan-doc.readthedocs.io/zh_CN/latest/tutorials/asplos23/).
+---
 
-**For publications by the XiangShan team, check out [the Publications Page](https://xiangshan-doc.readthedocs.io/zh_CN/latest/tutorials/publications/).**
+<div class="grid cards" markdown>
 
-## Introduction
+-   :material-clock-fast:{ .lg .middle } __Open Source__
 
-This is the official documentation repository for Xiangshan. It includes an overview of the Xiangshan project, code repository, integration guide, getting started tutorial, processor core introduction, development toolchain introduction, and other related content. Please use the left-side menu to navigate to the corresponding sections. If you are accessing the website on a mobile device, due to the limitations of the documentation framework, use the back button in the upper left corner to return to the parent menu and switch pages.
+    ---
 
-## About XiangShan
+    Install [`mkdocs-material`](#) with [`pip`](#) and get up
+    and running in minutes
 
-In 2019, with the support of the Chinese Academy of Sciences (CAS), the Institute of Computing Technology (ICT) of CAS initiated the "XiangShan" high-performance open-source RISC-V processor project. The project successfully developed the XiangShan processor core, which is currently one of the highest-performing open-source RISC-V processor cores worldwide. It has received over 3600 stars and more than 460 forks on GitHub, making it one of the most renowned open-source hardware projects. XiangShan has gained active support from domestic and international enterprises. A consortium of 16 companies has jointly initiated an open-source chip innovation alliance, collaborating on further development around XiangShan to create demonstration applications and accelerate the RISC-V ecosystem. The nonprofit organization [Beijing Institute of Open Source Chip (BOSC)](https://www.bosc.ac.cn/) was founded with industry-leading companies as its founding members. Working closely with the industry, BOSC will further develop XiangShan.
+    [:octicons-arrow-right-24: Getting started](#)
 
-Our goal is to become a global open-source architecture innovation platform that serves the needs of industry, academia, and individual enthusiasts in architecture research. Additionally, we aim to explore an agile development process for high-performance processors during the development of XiangShan. This involves establishing a high-performance processor design, implementation, and verification flow based on open-source tools to enhance development efficiency and lower barriers to entry.
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
 
-XiangShan will maintain a microarchitecture iteration cycle of approximately six months, including tape-out cycles, to continuously drive microarchitecture innovation and agile development practices. The development of the XiangShan processor began in June 2020, with the initial commit hash being [1e3fad1](https://github.com/OpenXiangShan/XiangShan/commit/1e3fad102a1e42f73b646332d264923bfbe9c77e). The previous commits belong to [the NutShell repository](https://github.com/OSCPU/NutShell) from the first [One Student One Chip](https://ysyx.oscc.cc/) project. Key code components of the XiangShan processor, including the CPU frontend, backend, memory access pipeline, L1 Cache, L2/L3 Cache, and more, have been independently implemented by the XiangShan team. The physical design process of the XiangShan processor is primarily carried out by the backend and SoC engineering teams at the Peng Cheng Laboratory. Through ongoing optimization and tape-out validation, we aim to gradually improve the XiangShan processor's performance, power, and area (PPA) levels, making it an open-source industrial-competitive processor and a global open-source architecture innovation platform.
+    ---
 
-The first generation of the XiangShan processor (Yanqihu architecture) supports the RV64GC instruction set and has been taped out in July 2021, achieving a frequency of 1.3GHz on a 28nm process node. In January 2022, it was successfully brought out. It boots Linux/Debian operating systems and runs SPEC CPU2006 for 7@1Hz. The source code is [here](https://github.com/OpenXiangShan/XiangShan/releases/tag/v1.0).
+    Focus on your content and generate a responsive and searchable static site
 
-The second generation (Nanhu architecture) supports the RV64GCBK instruction set and completed RTL code freezing in February 2023, targeting a frequency of 2GHz on a 14nm process node. The GDSII is fixed in June 2023. The source code is [here](https://github.com/OpenXiangShan/XiangShan/releases/tag/v2.0).
-Nanhu V2 adds support for more functionalities such as MBIST. Its design has been frozen in February 2023, and it was taped out in April 2023. The source code of Nanhu v2 is [here](https://github.com/OpenXiangShan/XiangShan/releases/tag/v2.1). Nanhu V3 will include more microarchitecture and PPA improvements and is currently in progress.
+    [:octicons-arrow-right-24: Reference](#)
 
-The third generation (Kunminghu) is in progress. We welcome your contributions.
+-   :material-format-font:{ .lg .middle } __Made to measure__
 
-**Xiangshan processors will always adhere to open source, and firmly open source all our design, verification, and basic tool codes.** We are very grateful to the community for their contributions to Fragrant Hills. In terms of hardware design, some module designs of XiangShan processors have been inspired by open source processors and public papers. We have referred to existing open source rocket-chip, berkeley-hardfloat, SiFive block-inclusivecache and other codes. Based on the existing bus tools, floating-point unit, and system cache in the Chisel open source community, we have modified and improved their functions, and optimized performance indicators such as frequency and throughput. At the same time, we welcome the community to develop based on XiangShan or use the code of the XiangShan project. Among many open source agreements, we have chosen [Mulan Permissive Software License v2] (http://license.coscl.org.cn/MulanPSL2), hoping to (1) keep the XiangShan processor open, Mulan Permissive Software License v2 is not contagious, and users can use it with confidence; (2) Based in China and facing the world, Mulan Permissive Software License v2 is expressed in both Chinese and English, and the Chinese and English versions have the same legal effect.
+    ---
 
-**XiangShan actively embraces the open source community and welcomes contributions from the community.** We have seen that some open source RISC-V processor projects rarely receive external code submissions. We understand that there are multiple conceptual and technical reasons behind this phenomenon. For the XiangShan project, we welcome external contributions, such as submitting questions, submitting feature requirements, submitting code, etc. We will seriously consider and evaluate every opinion and suggestion. For example, Chisel is still new to the industry, if you are more familiar with Verilog/SystemVerilog but want to submit code contributions to XiangShan, we welcome you to [this repo](https://github.com/OpenXiangShan/XS-Verilog-Library) submit a Pull Request. At the technical level, we hope to explore a set of processes and tools for evaluating the quality of code changes, and the basic process determines whether to accept a code submission. For example, we hope that in the near future, we will open a faster and more accurate performance sampling framework to evaluate the performance benefits brought about by an architecture change. We will accept this code modification when it has certain performance benefits, good code style and other conditions. If we sum up our developer strategy in one sentence, we welcome any discussion, issue submission, code modification, etc. that are beneficial to XiangShan.
+    Change the colors, fonts, language, icons, logo and more with a few lines
 
-**In addition to microstructure exploration, the XiangShan project also hopes to explore and establish an agile development process for high-performance processors.** The goal of XiangShan Processor is to become an open source platform for architecture innovation facing the world. The establishment of basic capabilities, facilities, and processes is the key to the long-term high-quality development of Fragrant Hills Processor. We will maintain long-term and stable investment and continue to strive to build processors The infrastructure and basic process of agile development. In the early stage of the XiangShan project, we followed the development and verification framework of the NutShell processor. During the advancement of the XiangShan project, we have made a lot of improvements to it, adding features including simulation checkpoints, compressed file loading, multi-core verification support, and more. At present, the verification environment of XiangShan processor has been greatly improved compared with that of NutShell processor, and rich basic tools support XiangShan's agile verification process of this complex scale. In addition, the UCB and Chipyard frameworks are role models for us to learn from, and we refer to or use many open source projects initiated by them. We hope that with the advancement and deepening of the XiangShan project, we can promote the continuous progress of the open source community, and together with the open source community, promote the establishment of an agile development process and infrastructure for high-performance processors.
+    [:octicons-arrow-right-24: Customization](#)
 
-**We clearly realize that there is still a big gap between XiangShan processors and the mainstream level of the industry. For example, we are not good enough in the selection of solutions for many technical points. The goal of XiangShan Processor is to become an open source platform for architecture innovation facing the world. We welcome suggestions and opinions from industry seniors, high-performance processor enthusiasts, and open source communities. As long as it is beneficial to the XiangShan Processor Project, we will Accept and improve. At the same time, we also welcome and encourage more people to join in the development of XiangShan processors to promote the continuous innovation of the XiangShan project.**
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
